@@ -34,10 +34,9 @@
   (if (= n 0)
 	n0
 	(f-iteration (+ n2 (* 2 n1) (* 3 n0)) ; new n2
-				 n2						  ; new n1
-				 n1                       ; new n0
-				 (- n 1))))               ; n--
-
+				 n2 ; new n1
+				 n1 ; new n0
+				 (- n 1)))) ; n--
 
 ; Tests
 (f-rec 0)
