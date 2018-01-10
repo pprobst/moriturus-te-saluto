@@ -9,9 +9,8 @@
   (* x x x))
 
 (define (p x) 
-  ; the following gets truly executed when x < 0.1
-  (- (* 3 x) 
-	 (* 4 (cube x))))
+  ; the following gets executed when x < 0.1
+  (- (* 3 x) (* 4 (cube x))))
 
 (define (sine angle)
   (if (not (> (abs angle) 0.1))
