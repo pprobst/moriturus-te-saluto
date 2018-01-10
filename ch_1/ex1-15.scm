@@ -43,5 +43,5 @@
 ; We can see that angle is divided by 3.0 each time p is called.
 ; Therefore, we can say that the number of steps will vary
 ; logarithmically wih x, so the complexity is O(log(x)). 
-;The same can be applied for growth in space.
+; The same can be applied for growth in space.
 
