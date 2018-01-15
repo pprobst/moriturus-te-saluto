@@ -1,0 +1,4 @@
+- Go back to 1.14
+- Go back to 1.19
+
+- Review all exercises after end of chapter
