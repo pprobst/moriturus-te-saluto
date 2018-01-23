@@ -32,7 +32,7 @@
       (iter (next a) (combiner res (term a)))))
   (iter a null-value))
 
-; Auxiliar procedures
+; Auxiliary procedures
 (define (identity n) n)
 (define (inc n) (+ n 1))
 

@@ -25,7 +25,7 @@
     (* (term a)
        (product-rec term (next a) next b))))
 
-; Auxiliar functions
+; Auxiliary procedures
 (define (inc n)
   (+ n 1))
 
