@@ -2,4 +2,6 @@
 - Go back to 1.19;
 - Go back to 1.28;
 - Go back to 1.33;
-- Review all exercises after end of chapter.
+- Go back to 1.45;
+- Review all exercises after end of chapter (the exercises above are the
+  ones I need to pay special attention to!)
