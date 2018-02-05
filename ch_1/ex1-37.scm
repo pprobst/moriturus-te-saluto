@@ -1,7 +1,7 @@
 ; Exercise 1.37:
 ; Suppose that n and d are procedures of one argument (the term
 ; index i) that return the Ni and Di of the terms of the continued
-; fraction. Define a procedure cont-frac such that evaluating 
+; fraction. Define a procedure cont-frac such that evaluating
 ; (cont-frac n d k) computes the value of the k-term finite
 ; continued fraction. Check your procedure by approximating
 ; 1/phi using
@@ -10,10 +10,10 @@
 ;           (lambda (i) 1.0)
 ;           k)
 
-; for sucessive values of k. How large must you make k in order
+; for successive values of k. How large must you make k in order
 ; to get an approximation that is accurate to 4 decimal places
 ; If your cont-frac procedure generates a recursive process, write
-; one that generates an iterative proces. If not, do the opposite.
+; one that generates an iterative process. If not, do the opposite.
 
 ; Iterative version
 (define (cont-frac n d k)
@@ -38,4 +38,3 @@
                (lambda (i) 1.0)
                5
                1)
-

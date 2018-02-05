@@ -2,13 +2,13 @@
 ; The sum procedure is only the simplest of a vast number of similar
 ; abstractions that can be captured as higher-order procedures.
 ; Write an analogous procedure called product that returns the product
-; of the values of a function at poins over a given range. Show how to
+; of the values of a function at points over a given range. Show how to
 ; determine factorial in terms of product. Also use product to computate
 ; the approximation to pi using the formula
 ; pi/4 = (2*4*4*6*6*8*...)/(3*3*5*5*7*7*...)
 
 ; If your procedure generates a recursive process, write one that generates
-; an interative process. Do the opposite if it generates an iterative process.
+; an iterative process. Do the opposite if it generates an iterative process.
 
 ; Iterative
 (define (product term a next b)
@@ -20,7 +20,7 @@
 
 ; Recursive
 (define (product-rec term a next b)
-  (if (> a b) 
+  (if (> a b)
     1
     (* (term a)
        (product-rec term (next a) next b))))
@@ -46,7 +46,7 @@
 (fact-rec 5)
 
 ; Approximations to pi
-; I wasn't able to think of a good translation for this exercise, so I 
+; I wasn't able to think of a good translation for this exercise, so I
 ; researched about it and found about Wallis product.
 ; (Again, thanks to Bill the Lizard)
 ; https://en.wikipedia.org/wiki/Wallis_product
@@ -61,4 +61,3 @@
 (pi-approx 15)
 (pi-approx 20)
 (pi-approx 100)
-

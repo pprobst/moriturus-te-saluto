@@ -5,10 +5,11 @@
   (if (= b 0)
     a
     (gcd b (remainder a b))))
+    
 ; Using the substitution method (for normal-order
 ; evaluation), illustrate the process generated in
 ; evaluating (gcd 206 40) and indicate the remainder
-; operations that are actually performed. 
+; operations that are actually performed.
 ; How many remainder operations are actually performed
 ; in the normal-order evaluation of (gcd 206 40)?
 ; In the applicative-order evaluation?
@@ -28,7 +29,7 @@
 ; gcd (40 % (206 % 40) ((206 % 40) % (40 % (206 % 40)) --> gcd 4 2
 
 ; if ((206 % 40) % (40 % (206 % 40) == 0) --> 4 (F)
-; gcd (206 % 40) % (40 % (206 % 40)) ((40 % (206 % 40) % ((206 % 40) % (40 % (206 % 40))) --> gcd 2 0 
+; gcd (206 % 40) % (40 % (206 % 40)) ((40 % (206 % 40) % ((206 % 40) % (40 % (206 % 40))) --> gcd 2 0
 
 ; if (((40 % (206 % 40)) % (((206 % 40) % (40 % (206 % 40)))) == 0) --> 2 (V)
 

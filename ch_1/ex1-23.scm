@@ -4,13 +4,13 @@
 ; is not point in checking to see if it is divisible by any
 ; larger even number.
 ; To implement this change, define a procedure next that returns
-; 3 if its input is equal to 2 and otherwise returns its input 
+; 3 if its input is equal to 2 and otherwise returns its input
 ; plus 2. Modify the smallest-divisor procedure to use (next test-divisor)
 ; instead of (+ test-divisor 1).
 ; Run the text for each of the 12 primes (nah) found in Exercise 1.22.
 ; Since this modification halves the number of steps, you should
 ; expect it to run about twice as fast. Is this expectation confirmed?
-; If not, what is the observed ratio of the speeds of the two algorithms, 
+; If not, what is the observed ratio of the speeds of the two algorithms,
 ; and how do you explain the fact that it is different from 2?
 
 
@@ -33,7 +33,7 @@
 (define (search-for-primes n range)
   (if (even? n)
       (search-primes (+ n 1) range)
-      (seach-primes n range)))
+      (search-primes n range)))
 
 (define (search-primes n range)
   (if (> range 0)
@@ -51,7 +51,7 @@
   (find-divisor n 2))
 
 (define (next input)
-  (if (= input 2) 
+  (if (= input 2)
       3
       (+ input 2)))
 

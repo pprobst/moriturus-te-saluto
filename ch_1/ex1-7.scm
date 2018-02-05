@@ -2,7 +2,7 @@
 ; [...] watch how guess changes from one iteration to the next
 ; and to stop when the change is a very small fraction of the
 ; guess.
-; Design a square-root procudedure that uses this kind of end test.
+; Design a square-root procedure that uses this kind of end test.
 ; Does this work better for small and large numbers?
 
 (define (sqrt-iter guess x)

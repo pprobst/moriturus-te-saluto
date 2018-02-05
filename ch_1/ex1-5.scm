@@ -11,7 +11,7 @@
 (test 0 (p))
 
 ; What behavior will Ben observe with an interpreter that uses
-; applicative-order evaluaton? What behavior will he observe with
+; applicative-order evaluation? What behavior will he observe with
 ; an interpreter that uses normal-order evaluation? Explain your
 ; answer. (Assume that the evaluation rule for the special form
 ; 'if' is the same whether the interpreter is using normal or
@@ -20,9 +20,9 @@
 ; the alternative expression.)
 
 
-; With applicative-order: evaluate args before function is called 
+; With applicative-order: evaluate args when the procedure is applied
 ; (test 0 (p)) never finishes being evaluated (it expands to itself)
 
-; With normal-order: don't evaluate args until you need it
+; With normal-order: don't evaluate args until you need them
 ; if (= 0 0) ---> #t
 ; 0

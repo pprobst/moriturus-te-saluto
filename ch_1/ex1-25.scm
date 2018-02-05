@@ -10,7 +10,7 @@
 ; Is she correct? Would this procedure serve as well
 ; for our fast prime tester? Explain.
 
-(define (square x) (* x x)) 
+(define (square x) (* x x))
 
 (define (fast-expt-iter a b n)
   (cond ((= n 0) a)
@@ -20,38 +20,38 @@
 (define (fast-expt b n)
   (fast-expt-iter 1 b n))
 
-(define (fermat-test n) 
-  (define (try-it a) 
-    (= (expmod a n n) a)) 
-  (try-it (+ 1 (random-integer (- n 1))))) 
+(define (fermat-test n)
+  (define (try-it a)
+    (= (expmod a n n) a))
+  (try-it (+ 1 (random-integer (- n 1)))))
 
-(define (fast-prime? n times) 
-  (cond ((= times 0) true) 
-        ((fermat-test n) (fast-prime? n (- times 1))) 
-        (else false))) 
+(define (fast-prime? n times)
+  (cond ((= times 0) true)
+        ((fermat-test n) (fast-prime? n (- times 1)))
+        (else false)))
 
-(define (prime? n) 
-  ; Perform the test how many times? 
-  ; Use 100 as an arbitrary value. 
-  (fast-prime? n 100)) 
+(define (prime? n)
+  ; Perform the test how many times?
+  ; Use 100 as an arbitrary value.
+  (fast-prime? n 100))
 
-(define (timed-prime-test n) 
-  (start-prime-test n (runtime))) 
+(define (timed-prime-test n)
+  (start-prime-test n (runtime)))
 
-(define (start-prime-test n start-time) 
-  (if (prime? n) 
-    (report-prime n (- (runtime) start-time)))) 
+(define (start-prime-test n start-time)
+  (if (prime? n)
+    (report-prime n (- (runtime) start-time))))
 
-(define (report-prime n elapsed-time) 
-  (newline) 
-  (display n) 
-  (display " *** ") 
-  (display elapsed-time)) 
+(define (report-prime n elapsed-time)
+  (newline)
+  (display n)
+  (display " *** ")
+  (display elapsed-time))
 
 (define (search-for-primes n range)
   (if (even? n)
     (search-primes (+ n 1) range)
-    (seach-primes n range)))
+    (search-primes n range)))
 
 (define (search-primes n range)
   (if (> range 0)

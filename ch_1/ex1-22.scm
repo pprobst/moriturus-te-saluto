@@ -28,18 +28,18 @@
 ; Note the time needed to test each prime. Since the testing
 ; algorithm has order of growth O(sqrt(n)), you should expect
 ; that testing for primes around 10000 should take about sqrt(10)
-; times as long as testing for primes around 1000. 
+; times as long as testing for primes around 1000.
 ; (a) Do your data bear this out:?
-; (b) How well do the dara for 100000 and 1000000 support the 
-;     O(sqrt(n)) prediction? 
-; (c) Is your result compativle with the notion that programs on
+; (b) How well do the data for 100000 and 1000000 support the
+;     O(sqrt(n)) prediction?
+; (c) Is your result compatible with the notion that programs on
 ;     your machine run in time proportional to the number of steps
 ;     required for the computation?
 
 (define (search-for-primes n range)
   (if (even? n)
       (search-primes (+ n 1) range)
-      (seach-primes n range)))
+      (search-primes n range)))
 
 (define (search-primes n range)
   (if (> range 0)
@@ -72,7 +72,7 @@
 ;(search-for-primes 1000000 10)
 
 ; This exercise is obviously dated, as my computer doesn't feel
-; pressured to computate such values. Therefore, I need to test 
+; pressured to computate such values. Therefore, I need to test
 ; with with higher order numbers.
 (search-for-primes 10000000000 31)
 (search-for-primes 100000000000 31)

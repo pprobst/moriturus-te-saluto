@@ -1,6 +1,6 @@
 ; Exercise 16:
-; Design a procedure that evolves an iterative 
-; exponentation process that uses successive squaring
+; Design a procedure that evolves an iterative
+; exponentiation process that uses successive squaring
 ; and uses a logarithmic number of steps, as does
 ; fast-expt.
 
@@ -28,4 +28,3 @@
 (fast-expt 4 20)
 (fast-expt 1 1)
 (fast-expt 6 6)
-
