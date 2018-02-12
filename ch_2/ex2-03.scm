@@ -43,7 +43,7 @@
 (rect-area r)
 (rect-perimeter r)
 
-; Rectangle (from segment connecting 2 corners --> diagonal)
+; Rectangle2 (from segment connecting 2 corners --> diagonal)
 (define (make-rect2 x y) (make-segment x y))
 
 (define (rect-base2 r)
@@ -62,6 +62,7 @@
 (define (rect-area2 r) 
   (* (rect-base2 r) (rect-height2 r)))
 
+; Tests
 (define r2 (make-rect2 p1 p2))
 (rect-area2 r2)
 (rect-perimeter2 r2)
