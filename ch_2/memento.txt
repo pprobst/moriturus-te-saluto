@@ -1,0 +1,2 @@
+- Go back to 2.6;
+- Review all exercises after end of chapter.
