@@ -1,2 +1,2 @@
-- Go back to 2.6;
+- Go back to 2.6 (incomplete!);
 - Review all exercises after end of chapter.
