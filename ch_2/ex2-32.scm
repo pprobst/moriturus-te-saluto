@@ -14,6 +14,6 @@
 
 (subsets (list 1 2 3))
 
-; This solutions was shamelessly taken from:
+; This solution was shamelessly taken from:
 ; http://community.schemewiki.org/?sicp-ex-2.32
 ; (couldn't get the logic right!)
