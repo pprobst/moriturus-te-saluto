@@ -1,4 +1,4 @@
 - Go back to 2.6 (incomplete!);
 - Go back to 2.28;
 - Go back to 2.32;
-- Review all exercises after end of chapter.
+- Go back to 2.42 & 2.43.
