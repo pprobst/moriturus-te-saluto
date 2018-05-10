@@ -42,7 +42,7 @@
 ;; Tests
 (define evens (list->tree '(0 2 4 6 8 10)))
 (define odds (list->tree '(1 3 5 7 9)))
-(define primes (list->tree '(2 3 5 7 11 13 17 19)))'))'))'))
+(define primes (list->tree '(2 3 5 7 11 13 17 19)))
 
 (union-tree evens odds)
 (intersection-tree odds primes)
