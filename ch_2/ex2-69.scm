@@ -30,4 +30,4 @@
 (define example (generate-huffman-tree
                   '((A 5) (B 7) (C 3) (D 15) (E 20) (F 45))))
 
-(encode '(A B C D E F) example)
+; (encode '(A B C D E F) example)
