@@ -1,4 +1,6 @@
-- Go back to 2.6 (incomplete!);
+- Go back to 2.6;
 - Go back to 2.28;
 - Go back to 2.32;
-- Go back to 2.42 & 2.43.
+- Go back to 2.42 & 2.43;
+- Skipped some exercises at the end of Chapter 2 (it's tiring). Maybe I'll
+revisit them.
